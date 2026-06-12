@@ -1,0 +1,798 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Kaisei+Decol&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kaisei Decol' 'Noto Sans JP', 'Babylonica', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+    'Hiragino Sans', 'Meiryo', sans-serif;
+}
+
+:root {
+  --c1: #f4f2e5;
+  --c4: #333;
+  --noto: 'Noto Sans JP';
+}
+
+a {
+  text-decoration: none;
+  color: var(--c4);
+}
+
+body {
+  background-color: var(--c1);
+  color: var(--c4);
+}
+
+li,
+ol {
+  list-style: none;
+}
+
+/* aabutton */
+.aabutton {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 120px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.aabutton:hover {
+  opacity: 0.6;
+}
+
+.aabutton a img {
+  width: 120px;
+  height: auto;
+}
+
+/* header */
+.hero {
+  position: relative;
+  height: 960px;
+  font-family: 'Kaisei Decol';
+  overflow: hidden;
+}
+
+.sky {
+  position: absolute;
+  z-index: -111;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 384px;
+  background-color: #10316a;
+}
+
+.ground {
+  position: absolute;
+  top: 384px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 560px;
+  background-color: #eae7d5;
+}
+
+.hero-img {
+  position: absolute;
+  top: -228px;
+  left: -96px;
+  width: 2200px;
+  height: auto;
+}
+
+.headline {
+  position: absolute;
+  top: 664px;
+  left: 96px;
+  font-size: 104px;
+  font-weight: bold;
+  transform: rotateX(-16deg) rotateY(16deg) rotateZ(-2deg);
+  transition: 0.3s;
+}
+
+.headline:hover {
+  transform: translateX(1rem);
+}
+
+.headline a {
+  color: #333;
+}
+
+.hero-botton-wrap {
+  position: absolute;
+  top: 600px;
+  right: 104px;
+  display: flex;
+  gap: 72px;
+}
+
+.botton-img {
+  width: 240px;
+  height: 240px;
+  transition: 0.3s;
+}
+
+.hourglass {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+  position: relative;
+}
+
+.hexagon {
+  position: relative;
+  transform: translateY(-32px);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+.clover {
+  transform: translateY(-64px);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+.hourglass::before {
+  position: absolute;
+  clip-path: polygon(0 1%, 50% 25%, 100% 0, 100% 100%, 50% 75%, 0 100%);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.hexagon::before {
+  position: absolute;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.hourglass:hover {
+  box-shadow: unset;
+  transform: translate(8px, 8px);
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.6));
+}
+
+.hexagon:hover {
+  box-shadow: unset;
+  transform: translate(8px, -24px);
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.6));
+}
+
+.clover:hover {
+  box-shadow: unset;
+  transform: translate(8px, -56px);
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.6));
+}
+
+/* ヘッダー終了 */
+
+/* ゲーム紹介ネーム */
+#GAME {
+  margin-top: 120px;
+}
+
+.game-width {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.console-title {
+  padding-bottom: 48px;
+  text-align: center;
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.game-flex {
+  display: flex;
+  padding-bottom: 160px;
+}
+
+.game-title-year {
+  width: 302px;
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.game-title-year dl,
+.geme-about dl {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #333;
+}
+
+.geme-about {
+  width: 658px;
+}
+
+.geme-about dl dt {
+  padding-left: 32px;
+}
+
+/* ゲーム一覧ボタン */
+.game-bth {
+  text-align: center;
+  margin-bottom: 160px;
+}
+
+.game-bth a {
+  background-color: #fada7a;
+  text-decoration: none;
+  padding: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.game-bth a:hover {
+  border-radius: 1rem;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+/* メニュー覧 */
+#grand-menu-menu {
+  margin-top: 120px;
+}
+
+.grand-menu {
+  display: flex;
+  max-width: 1008px;
+  height: 316px;
+  padding-bottom: 100px;
+}
+
+/* メニュー写真とメニュー表横並び */
+.grand-menu2 {
+  display: flex;
+  max-width: 1008px;
+  height: 316px;
+  margin-bottom: 141px;
+  padding-bottom: 100px;
+}
+
+.menu-title-h2 {
+  margin: 0 auto;
+  padding: 56px;
+}
+
+/* メニュー写真横並びと幅指定 */
+.menu-img {
+  display: flex;
+}
+
+.menu-img {
+  position: relative;
+}
+
+.food-f {
+  position: absolute;
+  z-index: 10;
+  text-align: left;
+  width: 226px;
+  margin-top: 155px;
+  margin-left: 20px;
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.only {
+  position: absolute;
+  z-index: 9;
+  margin-left: 146px;
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+.menu-beef {
+  background-color: #ffffff;
+  width: 226px;
+  max-height: 226px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-beef img {
+  max-width: 165px;
+  max-height: 103px;
+}
+
+.menu-napolitan {
+  background-color: #ffffff;
+  width: 226px;
+  max-height: 226px;
+  border-radius: 24px;
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-napolitan img {
+  max-width: 165px;
+  max-height: 103px;
+}
+
+/* メニュー表横並びと幅指定 */
+.menu-text {
+  display: flex;
+  max-width: 500px;
+  padding-bottom: 160px;
+}
+.food-text dl {
+  display: flex;
+  justify-content: space-between;
+  width: 191px;
+  border-bottom: solid 2px #333;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+.food-text {
+  margin-left: 40px;
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*メニュー値段背景指定*/
+.food-text dd {
+  background-color: #40210f;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px 2px 8px;
+}
+
+.grand-width {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grand-width:last-of-type {
+  border-top: solid 2px #333;
+}
+
+.menu-title-h2 {
+  font-family: 'Kaisei Decol';
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.geme-about {
+  font-family: 'Noto Sans JP';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* footer-フッター */
+footer {
+  border-top: solid 4px #2b2a27;
+  text-align: center;
+  margin: 120px 0 120px;
+  font-family: 'Kaisei Decol';
+}
+
+.footer-LR {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 543px;
+  max-height: 300px;
+  padding-top: 64px;
+}
+
+.rogo-footer {
+  max-width: 280px;
+}
+
+.footer-R {
+  text-align: center;
+  max-width: 191px;
+  padding-left: 64px;
+}
+
+.footer-R p {
+  width: 184px;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.sns {
+  display: flex;
+  padding: 0px;
+}
+
+.sns li {
+  flex: auto;
+}
+
+.page {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0px;
+}
+
+.page li {
+  flex: auto;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.page img {
+  max-width: 80px;
+}
+
+.footer-img {
+  max-width: 100%;
+}
+
+.C {
+  text-align: center;
+  padding-top: 48px;
+}
+
+/* js */
+/* particles */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 348px;
+}
+
+/* granim */
+#canvas-basic {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 384px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* game-anime */
+.rot {
+  overflow: hidden;
+  width: 16px;
+  height: auto;
+  position: relative;
+}
+
+.anime {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.game-wrap1:hover dl .anime,
+.game-wrap2:hover dl .anime,
+.game-wrap3:hover dl .anime,
+.game-wrap4:hover dl .anime,
+.game-wrap5:hover dl .anime,
+.game-wrap6:hover dl .anime,
+.game-wrap7:hover dl .anime,
+.game-wrap8:hover dl .anime,
+.game-wrap9:hover dl .anime,
+.game-wrap10:hover dl .anime,
+.game-wrap11:hover dl .anime,
+.game-wrap12:hover dl .anime,
+.game-wrap13:hover dl .anime,
+.game-wrap14:hover dl .anime,
+.game-wrap15:hover dl .anime,
+.game-wrap16:hover dl .anime,
+.game-wrap17:hover dl .anime,
+.game-wrap18:hover dl .anime,
+.game-wrap19:hover dl .anime,
+.game-wrap20:hover dl .anime,
+.game-wrap21:hover dl .anime {
+  transform: translateX(24px);
+}
+
+.rot2 {
+  left: -24px;
+}
+
+.game-containar2 {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  /* aabutton */
+  .aabutton {
+    display: none;
+  }
+
+  /* header */
+  .hero {
+    height: 360px;
+    overflow: hidden;
+  }
+
+  .ground {
+    top: 120px;
+    height: 240px;
+  }
+
+  .sky {
+    height: 240px;
+  }
+
+  .hero-img {
+    top: -56px;
+    left: -40px;
+    width: 600px;
+  }
+
+  .headline {
+    top: 190px;
+    left: 24px;
+    font-size: 40px;
+  }
+
+  .hero-botton-wrap {
+    top: 260px;
+    right: 24px;
+    gap: 24px;
+  }
+
+  .hexagon {
+    transform: translateY(-16px);
+  }
+
+  .clover {
+    transform: translateY(-32px);
+  }
+
+  .botton-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* ゲーム紹介ネーム */
+  #GAME {
+    margin-top: 120px;
+    padding: 0 1rem 0;
+  }
+
+  .game-width {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .console-title {
+    padding-bottom: 24px;
+  }
+
+  .game-containar2 {
+    display: block;
+    margin-bottom: 120px;
+  }
+
+  .game-flex {
+    display: none;
+  }
+
+  .game-flex2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid #2b2a27;
+  }
+  .game-title {
+    display: flex;
+    gap: 8px;
+  }
+
+  .text {
+    margin-top: 0.3rem;
+  }
+
+  /* メニュー覧 */
+  #grand-menu-menu {
+    margin-top: 40px;
+    padding: 0 1rem 0;
+  }
+
+  .grand-menu {
+    display: flex;
+    max-width: 1008px;
+    height: auto;
+    padding-bottom: 100px;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* メニュー写真とメニュー表横並び */
+  .grand-menu2 {
+    display: flex;
+    max-width: 1008px;
+    height: auto;
+    margin: 0;
+    padding-bottom: 100px;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .menu-title-h2 {
+    margin: 0 auto;
+    padding: 56px;
+  }
+
+  /* メニュー写真横並びと幅指定 */
+  .menu-img {
+    display: flex;
+  }
+
+  .menu-img {
+    position: relative;
+  }
+
+  .food-f {
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    width: 226px;
+    margin-top: 155px;
+    margin-left: 20px;
+    font-family: 'Noto Sans JP';
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .only {
+    position: absolute;
+    z-index: 9;
+    margin-left: 146px;
+    font-family: 'Noto Sans JP';
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 16px;
+  }
+
+  .menu-beef {
+    background-color: #ffffff;
+    width: 226px;
+    height: 226px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-beef img {
+    max-width: 165px;
+    max-height: 103px;
+  }
+
+  .menu-napolitan {
+    background-color: #ffffff;
+    width: 226px;
+    max-height: 226px;
+    border-radius: 24px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-napolitan img {
+    max-width: 165px;
+    max-height: 103px;
+  }
+
+  /* メニュー表横並びと幅指定 */
+  .menu-text {
+    display: flex;
+    justify-content: space-around;
+    max-width: 448px;
+    padding-bottom: 0;
+  }
+
+  .food-text dl {
+    display: flex;
+    justify-content: space-between;
+    width: 191px;
+    border-bottom: solid 2px #333;
+    padding-top: 24px;
+    padding-bottom: 8px;
+  }
+
+  .food-text {
+    margin-left: 0;
+    font-family: 'Noto Sans JP';
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /*メニュー値段背景指定*/
+  .food-text dd {
+    background-color: #40210f;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px 2px 8px;
+  }
+
+  .grand-width {
+    width: 448px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .grand-width:last-of-type {
+    border-top: solid 2px #333;
+  }
+
+  .menu-title-h2 {
+    font-family: 'Kaisei Decol';
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .geme-about {
+    font-family: 'Noto Sans JP';
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* footer-フッター */
+  .footer-LR {
+    justify-content: center;
+  }
+
+  .footer-R {
+    display: none;
+  }
+
+  /* js */
+  /* particles */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+
+  /* granim */
+  #canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
