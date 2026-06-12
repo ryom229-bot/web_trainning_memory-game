@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- particles js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Granim.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+  <title>思い出プレイ堂</title>
+  <link rel="stylesheet" href="css/style2.css" />
+</head>
+
+<body>
+  <div class="aabutton"><a href="#"><img src="/img/logo_sin-1.png" alt=""></a></div>
+  <header>
+    <div class="hero">
+      <canvas id="canvas-basic"></canvas>
+      <div id="particles-js"></div>
+      <div class="ground"></div>
+      <img class="hero-img" src="img/Building/Town.png" alt="街並み" />
+      <span class="headline"><a href="index.html">思い出プレイ堂</a></span>
+      <div class="hero-botton-wrap">
+        <a href="index.html"><img class="botton-img hourglass" src="img/button/Hourglass_text.png" alt="砂時計ボタン" /></a>
+        <a href="game.html"><img class="botton-img hexagon" src="img/button/Hexagon_text.png" alt="六角形" /></a>
+        <a href="food.html"><img class="botton-img clover" src="img/button/Clover_text.png" alt="クローバー" /></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="GAME">
+      <div class="game-width">
+        <div class="console-title">
+          <h2>ファミリーコンピューター</h2>
+          <p>Family Computer</p>
+        </div>
+
+        <div class="game-flex">
+          <div class="game-title-year">
+            <dl>
+              <dt>ドンキーコング</dt>
+              <dd>1983</dd>
+            </dl>
+            <dl>
+              <dt>スーパーマリオブラザーズ</dt>
+              <dd>1985</dd>
+            </dl>
+            <dl>
+              <dt>ドラゴンクエスト</dt>
+              <dd>1986</dd>
+            </dl>
+            <dl>
+              <dt>ゼルダの伝説</dt>
+              <dd>1986</dd>
+            </dl>
+            <dl>
+              <dt>ファイナルファンタジー</dt>
+              <dd>1987</dd>
+            </dl>
+            <dl>
+              <dt>パンチアウト</dt>
+              <dd>1987</dd>
+            </dl>
+            <dl>
+              <dt>星のカービィ（夢の泉の物語）</dt>
+              <dd>1993</dd>
+            </dl>
+          </div>
+
+          <div class="geme-about">
+            <div class="game-wrap1">
+              <dl>
+                <dt>障害物を飛び越え、ドンキーコングからレディーを救う！</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap2">
+              <dl>
+                <dt>誰もが見たことのある、あのゲーム。</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap3">
+              <dl>
+                <dt>王道RPGゲームの初代。</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap4">
+              <dl>
+                <dt>アクション✖︎謎解き。頭を使って姫を救い出せ！</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap5">
+              <dl>
+                <dt>光の戦士としての物語がはじまる。</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap6">
+              <dl>
+                <dt>原点であり頂点のボクシングゲーム！</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap7">
+              <dl>
+                <dt>まんまるぷにぷに。</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-containar2">
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">ドンキーコング</span>
+              <span class="year">1983</span>
+            </div>
+            <span class="text">障害物を飛び越え、ドンキーコングからレディーを救う！</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">スーパーマリオブラザーズ</span>
+              <span class="year">1985</span>
+            </div>
+            <span class="text">誰もが見たことのある、あのゲーム。</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">ドラゴンクエスト</span>
+              <span class="year">1986</span>
+            </div>
+            <span class="text">王道RPGゲームの初代</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">ゼルダの伝説</span>
+              <span class="year">1986</span>
+            </div>
+            <span class="text">アクション✖︎謎解き。頭を使って姫を救い出せ！</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">ファイナルファンタジー</span>
+              <span class="year">1987</span>
+            </div>
+            <span class="text">光の戦士としての物語がはじまる。</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">パンチアウト</span>
+              <span class="year">1987</span>
+            </div>
+            <span class="text">原点であり頂点のボクシングゲーム</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">星のカービィ（夢の泉の物語）</span>
+              <span class="year">1993</span>
+            </div>
+            <span class="text">まんまるぷにぷに。</span>
+          </div>
+        </div>
+
+
+        <div class="console-title">
+          <h2>ニンテンドウ64</h2>
+          <p>NINTENDO 64</p>
+        </div>
+
+        <div class="game-flex">
+          <div class="game-title-year">
+            <dl>
+              <dt>マリオカート64</dt>
+              <dd>1996</dd>
+            </dl>
+            <dl>
+              <dt>スーパーマリオ64</dt>
+              <dd>1996</dd>
+            </dl>
+            <dl>
+              <dt>ポケモンスタジアム</dt>
+              <dd>1998</dd>
+            </dl>
+            <dl>
+              <dt>大乱闘スマッシュブラザーズ</dt>
+              <dd>1999</dd>
+            </dl>
+            <dl>
+              <dt>ドンキーコング64</dt>
+              <dd>1999</dd>
+            </dl>
+            <dl>
+              <dt>星のカービィ64</dt>
+              <dd>2000</dd>
+            </dl>
+            <dl>
+              <dt>どうぶつの森</dt>
+              <dd>2001</dd>
+            </dl>
+          </div>
+
+          <div class="geme-about">
+            <div class="game-wrap8">
+              <dl>
+                <dt>お馴染みのマリオキャラたちがレースで激突！</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap9">
+              <dl>
+                <dt>上へ下へ左へ右へ!3D世界でマリオが大暴れ!</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap10">
+              <dl>
+                <dt>あのポケモンリーグの興奮が、リアルな3Dで!</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap11">
+              <dl>
+                <dt>色々なゲームの主人公が、ステージで大乱闘！</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap12">
+              <dl>
+                <dt>今度の主人公はドンキーコング！？</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap13">
+              <dl>
+                <dt>コピーを駆使して、敵を倒せ！</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap14">
+              <dl>
+                <dt>個性豊かな仲間たちと、スローライフしてみませんか？</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-containar2">
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">マリオカート64</span>
+              <span class="year">1996</span>
+            </div>
+            <span class="text">お馴染みのマリオキャラたちがレースで激突！</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">スーパーマリオ64</span>
+              <span class="year">1996</span>
+            </div>
+            <span class="text">上へ下へ左へ右へ！3D世界でマリオが大暴れ！</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">ポケモンスタジアム</span>
+              <span class="year">1998</span>
+            </div>
+            <span class="text">あのポケモンリーグの興奮が、リアルな3Dで！</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">大乱闘スマッシュブラザーズ</span>
+              <span class="year">1999</span>
+            </div>
+            <span class="text">色々なゲームの主人公が、ステージで大乱闘！</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">ドンキーコング64</span>
+              <span class="year">1999</span>
+            </div>
+            <span class="text">今度の主人公はドンキーコング！？</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">星のカービィ64</span>
+              <span class="year">2000</span>
+            </div>
+            <span class="text">コピーを駆使して、敵を倒せ！</span>
+          </div>
+          <div class="game-flex2">
+            <div class="game-title">
+              <span class="name">どうぶつの森</span>
+              <span class="year">2001</span>
+            </div>
+            <span class="text">個性豊かな仲間たちと、スローライフしてみませんか？</span>
+          </div>
+        </div>
+
+
+        <div class="console-title">
+          <h2>プレイステーション</h2>
+          <p>Playstation</p>
+        </div>
+
+        <div class="game-flex">
+          <div class="game-title-year">
+            <dl>
+              <dt>バイオハザード</dt>
+              <dd>1996</dd>
+            </dl>
+            <dl>
+              <dt>クラッシュバンディクー</dt>
+              <dd>1996</dd>
+            </dl>
+            <dl>
+              <dt>パラッパラッパー</dt>
+              <dd>1996</dd>
+            </dl>
+            <dl>
+              <dt>ファイナルファンタジー７</dt>
+              <dd>1997</dd>
+            </dl>
+            <dl>
+              <dt>メタルギアソリッド</dt>
+              <dd>1998</dd>
+            </dl>
+            <dl>
+              <dt>サルゲッチュ</dt>
+              <dd>1999</dd>
+            </dl>
+            <dl>
+              <dt>ぼくのなつやすみ</dt>
+              <dd>2000</dd>
+            </dl>
+          </div>
+
+          <div class="geme-about">
+            <div class="game-wrap15">
+              <dl>
+                <dt>謎の洋館でゾンビに立ち向かえ！</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap16">
+              <dl>
+                <dt>クセ強キャラと、奥に進む3D世界をコミカル大冒険!</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap17">
+              <dl>
+                <dt>ラッパーになって、ノリノリでアゲアゲ！！！！！</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap18">
+              <dl>
+                <dt>星を救う物語が始まる。</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap19">
+              <dl>
+                <dt>
+                  ステルスアクションの金字塔。隠密行動でミッションをこなせ！
+                </dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap20">
+              <dl>
+                <dt>サルゲッチュで君の心もゲッチュ。</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+            <div class="game-wrap21">
+              <dl>
+                <dt>あの頃の夏休みを、もう一度。</dt>
+                <div class="rot">
+                  <dd class="anime rot1"><a href="">▶</a></dd>
+                  <dd class="anime rot2"><a href="">▶</a></dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-containar2">
+        <div class="game-flex2">
+          <div class="game-title">
+            <span class="name">バイオハザード</span>
+            <span class="year">1996</span>
+          </div>
+          <span class="text">謎の洋館でゾンビに立ち向かえ</span>
+        </div>
+        <div class="game-flex2">
+          <div class="game-title">
+            <span class="name">クラッシュバンディクー</span>
+            <span class="year">1996</span>
+          </div>
+          <span class="text">クセ強キャラと、奥に進む3D世界をコミカル大冒険！</span>
+        </div>
+        <div class="game-flex2">
+          <div class="game-title">
+            <span class="name">パラッパラッパー</span>
+            <span class="year">1996</span>
+          </div>
+          <span class="text">ラッパーになって、ノリノリでアゲアゲ！！！！！</span>
+        </div>
+        <div class="game-flex2">
+          <div class="game-title">
+            <span class="name">ファイナルファンタジー７</span>
+            <span class="year">1997</span>
+          </div>
+          <span class="text">星を救う物語が始まる。</span>
+        </div>
+        <div class="game-flex2">
+          <div class="game-title">
+            <span class="name">メタルギアソリッド</span>
+            <span class="year">1998</span>
+          </div>
+          <span class="text">ステルスアクションの金字塔。隠密行動でミッションをこなせ！</span>
+        </div>
+        <div class="game-flex2">
+          <div class="game-title">
+            <span class="name">サルゲッチュ</span>
+            <span class="year">1999</span>
+          </div>
+          <span class="text">サルゲッチュで君の心もゲッチュ。</span>
+        </div>
+        <div class="game-flex2">
+          <div class="game-title">
+            <span class="name">ぼくのなつやすみ</span>
+            <span class="year">2000</span>
+          </div>
+          <span class="text">あの頃の夏休みを、もう一度。</span>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="game-bth">
+      <a href="#">ゲーム一覧はこちら</a>
+    </div>
+
+    <footer>
+      <div class="footer-LR">
+        <div class="rogo-footer">
+          <img class="footer-img" src="img/logo_sin-1.png" alt="logo-img" />
+        </div>
+
+        <div class="footer-R">
+          <p>SNSはこちら</p>
+          <ul class="sns">
+            <li>
+              <img class="footer-img" src="img/sns/instagram.svg" alt="instagram" />
+            </li>
+            <li><img class="footer-img" src="img/sns/x.svg" /></li>
+            <li>
+              <img class="footer-img" src="img/sns/youtube.svg" alt="youtube" />
+            </li>
+          </ul>
+
+          <p>各ページへ</p>
+          <ul class="page">
+            <li>
+              <a href="index.html"><img class="footer-img" src="img/button/Hourglass_text.png" alt="Hourglass" />
+              </a>
+            </li>
+            <li>
+              <a href="game.html"><img class="footer-img" src="img/button/Hexagon_text.png" alt="Hexago" /></a>
+            </li>
+            <li>
+              <a href="food.html"><img class="footer-img" src="img/button/Clover_text.png" alt="Clover" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="C">©D206の仲間たち</p>
+    </footer>
+  </main>
+  <!-- slick -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- particles js -->
+  <script src="particles-config.js"></script>
+  <!-- js読み込み -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

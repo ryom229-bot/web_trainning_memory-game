@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+  <!-- particles js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Granim.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>思い出プレイ堂</title>
+</head>
+
+<body>
+  <div class="aabutton">
+    <a href="#"><img src="/img/logo_sin-1.png" alt="" /></a>
+  </div>
+  <header>
+    <div class="hero">
+      <canvas id="canvas-basic"></canvas>
+      <div id="particles-js"></div>
+      <div class="sky"></div>
+      <div class="ground"></div>
+      <img class="hero-img" src="img/Building/Town.png" alt="街並み" />
+      <span class="headline"><a href="index.html">思い出プレイ堂</a></span>
+      <div class="hero-botton-wrap">
+        <a href="index.html"><img class="botton-img hourglass" src="img/button/Hourglass_text.png" alt="砂時計ボタン" /></a>
+        <a href="game.html"><img class="botton-img hexagon" src="img/button/Hexagon_text.png" alt="六角形" /></a>
+        <a href="food.html"><img class="botton-img clover" src="img/button/Clover_text.png" alt="クローバー" /></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="common about">
+        <div class="about-title-wrap">
+          <span class="sub-title">レトロ喫茶</span>
+          <span class="title">思い出プレイ堂</span>
+        </div>
+        <div class="about-text-wrap">
+          <span class="text-title">レトロな空間をあなたに、、、</span>
+          <span class="text">大阪の天王寺、上本町の一角にある喫茶店「思い出プレイ堂」<br />
+            どこか懐かしさも感じる空間で1日中豊富なレトロゲームが楽しめます。<br />
+            訪れる全ての人の思い出の空間になりますように。<br />
+            レトロゲーム好きの人の憩いの場になれるように願いを込めて——。</span>
+          <div class="slick">
+            <div>
+              <img class="about-img" src="img/kari.jpg" alt="店内の写真" />
+            </div>
+            <div>
+              <img class="about-img" src="img/kari.jpg" alt="店内の写真" />
+            </div>
+            <div>
+              <img class="about-img" src="img/kari.jpg" alt="店内の写真" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="common service">
+        <div class="service-title-wrap">
+          <span class="title">サービス</span>
+        </div>
+        <div class="service-container">
+          <div class="service-wrap">
+            <img class="service-img" src="img/service/Space.png" alt="レトロな空間" />
+            <span class="text">レトロな空間の提供</span>
+            <a href="#" class="button-wrap">
+              <span class="button">くわしく</span>
+              <span class="service-arrow">→</span>
+            </a>
+          </div>
+          <div class="service-wrap">
+            <img class="service-img" src="img/service/Famicom.png" alt="ファミコンの写真" />
+            <span class="text">様々なゲーム</span>
+            <a href="#" class="button-wrap">
+              <span class="button">くわしく</span>
+              <span class="service-arrow">→</span>
+            </a>
+          </div>
+          <div class="service-wrap">
+            <img class="service-img" src="img/service/Potato.png" alt="ポテトの写真" />
+            <span class="text">お食事</span>
+            <a href="#" class="button-wrap">
+              <span class="button">くわしく</span>
+              <span class="service-arrow">→</span>
+            </a>
+          </div>
+          <div class="service-wrap">
+            <img class="service-img" src="img/service/coffee.png" alt="コーヒーの写真" />
+            <span class="text">ドリンク</span>
+            <a href="#" class="button-wrap">
+              <span class="button">くわしく</span>
+              <span class="service-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="common event">
+        <div class="event-title-wrap">
+          <span class="title">Event</span>
+          <span class="subtitle">イベント</span>
+        </div>
+        <div class="event-containar">
+          <div class="event-item">
+            <div class="event-item-left">
+              <span class="text">冬限定メニュー 12月からスタート！</span>
+              <div class="subtext-wrap">
+                <span class="subtext">＃冬限定メニュー</span>
+                <span class="subtext">＃冬だけの味</span>
+                <span class="subtext">＃あったか冬グルメ</span>
+              </div>
+            </div>
+            <a href="#" class="event-item-right">
+              <span class="event-arrow">→</span>
+            </a>
+          </div>
+          <div class="event-item">
+            <div class="event-item-left">
+              <span class="text">新しいゲームが入荷しました。</span>
+              <div class="subtext-wrap">
+                <span class="subtext">#マリオパーティー</span>
+                <span class="subtext">#どうぶつの森</span>
+                <span class="subtext">#バイオハザード(PS)</span>
+              </div>
+            </div>
+            <a href="#" class="event-item-right">
+              <span class="event-arrow">→</span>
+            </a>
+          </div>
+          <div class="event-item">
+            <div class="event-item-left">
+              <span class="text">ステージクリアでコーヒー無料！？</span>
+              <div class="subtext-wrap">
+                <span class="subtext">#魔界村</span>
+                <span class="subtext">#ゲキムズ#350円がお得！？</span>
+              </div>
+            </div>
+            <a href="#" class="event-item-right">
+              <span class="event-arrow">→</span>
+            </a>
+          </div>
+          <div class="event-item">
+            <div class="event-item-left">
+              <span class="text">冬限定メニュー 12月からスタート！</span>
+              <div class="subtext-wrap">
+                <span class="subtext">#グラディウス</span>
+                <span class="subtext">#↑↑↓↓←→←→BA</span>
+                <span class="subtext">#豪華賞品も？</span>
+              </div>
+            </div>
+            <a href="#" class="event-item-right">
+              <span class="event-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="common access">
+        <div class="access-containar">
+          <div class="access-wrap">
+            <div class="access-title-wrap">
+              <span class="title">Access</span>
+              <span class="subtitle">アクセス</span>
+            </div>
+            <div class="address-wrap">
+              <span class="address">思い出プレイ堂</span>
+              <span class="address">〒543-0001 大阪府大阪市天王寺区上本町6-8-4</span>
+            </div>
+            <div class="carspace-wrap">
+              <span class="carspace">駐車場：専用駐車場2台</span>
+              <span class="carspace">最寄駅：弘南鉄道大鰐線 中央弘前駅より徒歩3分</span>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.6420027042127!2d135.5159520762233!3d34.663742972932816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e751ae253873%3A0xf60305f82913d85f!2z5aSn6Ziq5oOF5aCx44Kz44Oz44OU44Ol44O844K_5bCC6ZaA5a2m5qChIE9JQw!5e0!3m2!1sja!2sjp!4v1763102482605!5m2!1sja!2sjp"
+            width="720" height="320" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="gmap_iframe"></iframe>
+        </div>
+      </div>
+
+      <div class="common contact">
+        <div class="contact-title-wrap">
+          <span class="title">Contact</span>
+          <span class="subtitle">コンタクト</span>
+        </div>
+        <div class="contact-wrap">
+          <a href="#" class="text">質問やお問い合わせなどはこちらから</a>
+          <span class="tell">TEL : 06-6772-2233</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-LR">
+      <div class="rogo-footer">
+        <a href="#"><img class="footer-img" src="img/logo_sin-1.png" alt="logo-img" /></a>
+      </div>
+
+      <div class="footer-R">
+        <p>SNSはこちら</p>
+        <ul class="sns">
+          <li>
+            <img class="footer-img" src="img/sns/instagram.svg" alt="instagram" />
+          </li>
+          <li><img class="footer-img" src="img/sns/x.svg" /></li>
+          <li>
+            <img class="footer-img" src="img/sns/youtube.svg" alt="youtube" />
+          </li>
+        </ul>
+
+        <p>各ページへ</p>
+        <ul class="page">
+          <li>
+            <a href="index.html"><img class="footer-img" src="img/button/Hourglass_text.png" alt="Hourglass" />
+            </a>
+          </li>
+          <li>
+            <a href="game.html"><img class="footer-img" src="img/button/Hexagon_text.png" alt="Hexago" /></a>
+          </li>
+          <li>
+            <a href="food.html"><img class="footer-img" src="img/button/Clover_text.png" alt="Clover" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="C">©D206の仲間たち</p>
+  </footer>
+
+  <!-- slick -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- particles js -->
+  <script src="particles-config.js"></script>
+  <!-- js読み込み -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
